@@ -1,0 +1,20 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+     text-align:center;
+    font-size: 16px;
+    font-family: Barrio, Roboto, Heletica;
+}
+
+h1{
+    color: lightslategray;
+    font-size: 3.1em;
+}
+
+img{
+    width:100%;
+    max-width: 300px;
+    height:100%;
+}
