@@ -11,16 +11,6 @@ General Formatting Rules
 html {
     /* set base font-size for document; will be used for rem calculations */
     font-size: 16px;
-
-    /* Gotham Font from freefontsfamily.com */
-    @font-face {
-        font-family: 'Gotham';
-        src: url('assets/Gotham-Font/Gotham-Black') format ('opentype');
-        font-weight: normal;
-        font-style: Black;
-    }
-
-    font-family: 'Roboto', sans-serif;
 }
 
 html,
@@ -28,6 +18,18 @@ body,
 #wrapper {
     /* resets margins to prevent sizing issues */
     margin: 0;
+
+        /* Gotham Font from freefontsfamily.com */
+/*
+    @font-face {
+        font-family: 'Gotham';
+        src: url('assets/Gotham-Font/Gotham-Black') format ('opentype');
+        font-weight: normal;
+        font-style: Black;
+    }
+*/
+
+    font-family: 'Roboto', sans-serif;
 }
 
 /*****************
