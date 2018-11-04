@@ -1,88 +1,81 @@
-/******************
-General Formatting
-******************/
+/************************
+General Formatting Rules
+************************/
 
-* {
-    box-sizing: border-box;
-}
+/* Code adapted from week 6 Flexbox exercise */
+
+* { box-sizing: border-box; }
 
 html {
-    /* sets base font size for rem sizing */
+    /* set base font-size for document; will be used for rem calculations */
     font-size: 16px;
-    font-family: Calibri, Helvetica, Arial, sans-serif;
 }
 
-html,
-body {
+html, body, #wrapper {
+    /* resets margins to prevent sizing issues */
     margin: 0;
 }
 
-header,
-footer {
-    /* centers header and footer content horizontally and vertically */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #86af49;
-}
-
-nav,
-aside,
-article {
-    padding: .5rem;
-}
-
-nav,
-aside {
-    background-color: #b5e7a0;
-    border: 1px dotted black;
-}
-
-/***************
-Grid Formatting
-***************/
+/*****************
+Flexbox Formatting
+*****************/
 
 #wrapper {
-    display: grid;
-    height: 100vh;
-    grid-template-areas: "header""sidenav""article""sidebar""footer";
-    grid-template-rows: 1fr 2fr 10fr 2fr 1fr;
+    /* centers container in viewport */
+    margin: 0 auto;
+    max-width: 957px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+
 }
 
-header {
-    grid-area: header;
+main {
+
+    /* formatting for visual clarity */
+    border: 1px solid black;
+    background-color: #ccc;
+    margin: .5rem 0;
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+
 }
 
-nav {
-    grid-area: sidenav;
+header, footer {
+
+    /* formatting for visual clarity */
+    background-color: lightblue;
+    padding: 0 .5rem;
 }
 
-article {
-    grid-area: article;
+article, nav, aside {
+
+    /* formatting for visual clarity */
+    border: 1px dotted black;
+    background-color: #fff;
+    margin: .5rem;
+    padding: .5rem;
+    order: 0; /* resets order to source default */
+    flex: 1; /* allows elements to grow to available space */
+    margin: .5rem 0; /* removes l/r margin spacing */
+
 }
 
-aside {
-    grid-area: sidebar;
+nav{
+    order: -1;
 }
 
-footer {
-    grid-area: footer
+aside, nav{
+    flex: 0 0 12rem;
 }
 
-@media screen and (min-width: 760px) {
-    #wrapper {
-        grid-template-areas: "header header header"
-            /* 1st row: header spans three columns  */
-            "sidenav article sidebar"
-            /* 2nd row: one element in each of 3 columns  */
-            "footer footer footer";
-        /* 3rd row: footer spans three columns */
-        grid-template-rows: 1fr 10fr 1fr;
-        /* defines relative height of three rows */
-        grid-template-columns: 20% auto 20%;
-        /* defines width of the three columns */
-        max-width: 1080px;
-        margin: 0 auto;
-    }
+article{
+    flex: 1;
+}
+
+@media screen and (max-width: 36rem){
+    main{    flex-direction: column;
+    width: 100vw;}
 
 }
