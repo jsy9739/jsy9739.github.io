@@ -4,14 +4,28 @@ General Formatting Rules
 
 /* Code adapted from week 6 Flexbox exercise */
 
-* { box-sizing: border-box; }
+* {
+    box-sizing: border-box;
+}
 
 html {
     /* set base font-size for document; will be used for rem calculations */
     font-size: 16px;
+
+    /* Gotham Font from freefontsfamily.com */
+    @font-face {
+        font-family: 'Gotham';
+        src: url('assets/Gotham-Font/Gotham-Black') format ('opentype');
+        font-weight: normal;
+        font-style: Black;
+    }
+
+    font-family: 'Roboto', sans-serif;
 }
 
-html, body, #wrapper {
+html,
+body,
+#wrapper {
     /* resets margins to prevent sizing issues */
     margin: 0;
 }
@@ -42,40 +56,49 @@ main {
 
 }
 
-header, footer {
+header,
+footer {
 
     /* formatting for visual clarity */
     background-color: lightblue;
     padding: 0 .5rem;
 }
 
-article, nav, aside {
+article,
+nav,
+aside {
 
     /* formatting for visual clarity */
     border: 1px dotted black;
     background-color: #fff;
     margin: .5rem;
     padding: .5rem;
-    order: 0; /* resets order to source default */
-    flex: 1; /* allows elements to grow to available space */
-    margin: .5rem 0; /* removes l/r margin spacing */
+    order: 0;
+    /* resets order to source default */
+    flex: 1;
+    /* allows elements to grow to available space */
+    margin: .5rem 0;
+    /* removes l/r margin spacing */
 
 }
 
-nav{
+nav {
     order: -1;
 }
 
-aside, nav{
+aside,
+nav {
     flex: 0 0 12rem;
 }
 
-article{
+article {
     flex: 1;
 }
 
-@media screen and (max-width: 36rem){
-    main{    flex-direction: column;
-    width: 100vw;}
+@media screen and (max-width: 36rem) {
+    main {
+        flex-direction: column;
+        width: 100vw;
+    }
 
 }
