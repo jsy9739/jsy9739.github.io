@@ -112,16 +112,28 @@ article {
     max-width: 410px;
 }
 
+#date{
+    	transform: rotate(-90deg);
+}
+
 /***************
 Text Formatting
 ***************/
+/*The Name*/
 h1{
     font-size: 36px;
 }
 
+/* The Title*/
 h2{
    font-weight: 300;
 font-size: 18px;
+}
+
+/* The Dates */
+h3{
+    font-size: 14px;
+    font-weight: 100;
 }
 
 p{
@@ -132,7 +144,7 @@ nav{
      font-size: 24px;
 }
 
-nav{
 
-}
+
+
 
