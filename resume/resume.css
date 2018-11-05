@@ -57,7 +57,6 @@ Flexbox Formatting
     max-width: 957px;
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
     overflow: hidden;
 
 }
@@ -284,16 +283,19 @@ Media Queries
 Resume
 ******/
 
-main {
-
-    /* formatting for visual clarity */
+.wrapper {
     display: flex;
-    flex-direction: row;
 }
 
-#heading {
-    background-color: greenyellow;
-    display: flex;
-    width: 100%;
+.wrapper > div {
+    color: white;
+    background: gray;
+    margin: .1em;
+    padding: .3em;
+    border-radius: 3px;
+    flex: 1;
+}
 
+#1 {
+    background-color: greenyellow;
 }
