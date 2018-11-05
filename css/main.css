@@ -95,21 +95,15 @@ article {
 
 }
 
+aside{
+    max-width: 440px;
+    flex: 1;
+}
+
 img {
     width: 100%;
 }
 
-@media screen and (max-width: 36rem) {
-    main {
-        flex-direction: column;
-        width: 100vw;
-    }
-
-    #item {
-        flex-direction: column;
-        width: 100vw;
-    }
-}
 
 #item {
     display: flex;
@@ -142,9 +136,6 @@ h2 {
 h3 {
     font-size: 14px;
     font-weight: 100;
-writing-mode: vertical-rl;
-text-orientation: sideways;
-
 }
 
 p {
@@ -153,4 +144,43 @@ p {
 
 nav {
     font-size: 24px;
+}
+
+h4{
+    font-size:14px;
+}
+
+
+/************
+Media Queries
+*************/
+
+@media screen and (max-width: 36rem) {
+    main {
+        flex-direction: column;
+        width: 100vw;
+    }
+
+    #item {
+        flex-direction: column;
+        width: 100vw;
+    }
+}
+
+@media screen and (min-width: 36rem) {
+    h3 {
+    font-size: 14px;
+    font-weight: 100;
+
+/* Safari */
+-webkit-transform: rotate(-90deg);
+/* Firefox */
+-moz-transform: rotate(-90deg);
+/* IE */
+-ms-transform: rotate(-90deg);
+/* Opera */
+-o-transform: rotate(-90deg);
+float: left;
+}
+
 }
