@@ -54,6 +54,7 @@ main {
     background-color: #ccc;
     margin: .5rem 0;
     display: flex;
+    flex-direction: column;
 }
 
 header,
@@ -77,17 +78,10 @@ aside {
     background-color: #fff;
     margin: .5rem;
     padding: .5rem;
-    order: 0;
-    /* resets order to source default */
     flex: 1;
     /* allows elements to grow to available space */
     margin: .5rem 0;
     /* removes l/r margin spacing */
-
-}
-
-nav {
-    order: -1;
 }
 
 aside,
@@ -104,16 +98,12 @@ article {
         flex-direction: column;
         width: 100vw;
     }
-
-/*
-      #item {
-        flex-direction: row;
+    #item {
+        flex-direction: column;
         width: 100vw;
     }
-*/
-
 }
 
-.item{
-        flex-direction: column;
+#item{
+    display: flex;
 }
