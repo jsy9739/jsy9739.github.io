@@ -85,6 +85,7 @@ footer {
 
 footer {
     padding-top: 30px;
+
 }
 
 article,
@@ -161,6 +162,7 @@ nav {
 
 h4 {
     font-size: 14px;
+    font-weight: 100;
 }
 
 h5 {
