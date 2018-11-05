@@ -74,12 +74,17 @@ header,
 footer {
 
     /* formatting for visual clarity */
-    background-color: lightblue;
+
     padding: 0 .5rem;
+    padding-top: 10px;
     flex-direction: row;
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+footer {
+    padding-top: 30px;
 }
 
 article,
@@ -93,13 +98,6 @@ aside {
     /* removes l/r margin spacing */
 }
 
-
-article {
-    flex: 1;
-    max-width: 480px;
-
-}
-
 aside {
     display: flex;
     flex-direction: column;
@@ -110,11 +108,17 @@ aside {
 
 }
 
-aside div {
-    align-self: baseline;
+article {
+    flex: 1;
+    max-width: 480px;
+    overflow: hidden;
+    max-height: 300px;
+
 }
 
-img {
+
+
+article img {
     width: 100%;
 }
 
@@ -128,7 +132,7 @@ img {
     max-width: 410px;
 }
 
-#shortb{
+#shortb {
     padding: 8px;
 }
 
@@ -143,7 +147,8 @@ h1 {
 /* The Title*/
 h2 {
     font-weight: 300;
-    font-size: 18px;
+    font-size: 16px;
+    margin: 0;
 }
 
 p {
@@ -197,8 +202,8 @@ Media Queries
         font-size: 10px;
     }
 
-    aside{
-           padding-bottom: 20px;
+    aside {
+        padding-bottom: 20px;
         padding-left: 20px;
     }
 
@@ -214,10 +219,11 @@ Media Queries
     #projecttitle {
         font-size: 36px;
     }
-    #sizing{
-    padding: 60px;
 
-}
+    #sizing {
+        padding: 50px;
+
+    }
 
 }
 
