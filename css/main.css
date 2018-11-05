@@ -120,7 +120,8 @@ img {
 }
 
 #date {
-    transform: rotate(-90deg);
+/*    height: 10px;*/
+/*    transform: rotate(-90deg);*/
 }
 
 /***************
@@ -141,6 +142,9 @@ h2 {
 h3 {
     font-size: 14px;
     font-weight: 100;
+writing-mode: vertical-rl;
+text-orientation: sideways;
+
 }
 
 p {
