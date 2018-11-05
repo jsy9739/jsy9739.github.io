@@ -309,12 +309,6 @@ main {
 img {
     display: block;
     width: 100%;
-    border: 2px solid;
-    border-radius: 5px;
-}
 
-@supports (display: grid) {
-    .warning {
-        display: none;
-    }
+
 }
