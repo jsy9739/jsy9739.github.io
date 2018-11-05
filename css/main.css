@@ -91,6 +91,12 @@ nav {
 
 article {
     flex: 1;
+    max-width: 480px;
+
+}
+
+img {
+    width: 100%;
 }
 
 @media screen and (max-width: 36rem) {
@@ -98,53 +104,49 @@ article {
         flex-direction: column;
         width: 100vw;
     }
+
     #item {
         flex-direction: column;
         width: 100vw;
     }
 }
 
-#item{
+#item {
     display: flex;
 }
 
-#shortbio{
+#shortbio {
     max-width: 410px;
 }
 
-#date{
-    	transform: rotate(-90deg);
+#date {
+    transform: rotate(-90deg);
 }
 
 /***************
 Text Formatting
 ***************/
 /*The Name*/
-h1{
+h1 {
     font-size: 36px;
 }
 
 /* The Title*/
-h2{
-   font-weight: 300;
-font-size: 18px;
+h2 {
+    font-weight: 300;
+    font-size: 18px;
 }
 
 /* The Dates */
-h3{
+h3 {
     font-size: 14px;
     font-weight: 100;
 }
 
-p{
-     font-size: 24px;
+p {
+    font-size: 24px;
 }
 
-nav{
-     font-size: 24px;
+nav {
+    font-size: 24px;
 }
-
-
-
-
-
