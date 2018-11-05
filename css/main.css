@@ -58,14 +58,13 @@ Flexbox Formatting
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    overflow: hidden;
 
 }
 
 main {
 
     /* formatting for visual clarity */
-
-
     display: flex;
     flex-direction: column;
 }
@@ -88,15 +87,16 @@ footer {
 
 }
 
-article,
-nav,
-aside {
-    margin: .5rem;
+article {
+
     padding: .5rem;
-    flex: 1;
     /* allows elements to grow to available space */
     margin: .2rem 0;
     /* removes l/r margin spacing */
+    flex: 1;
+    max-width: 480px;
+    overflow: hidden;
+    max-height: 300px;
 }
 
 aside {
@@ -110,8 +110,6 @@ aside {
 }
 
 article {
-    flex: 1;
-    max-width: 480px;
     overflow: hidden;
     max-height: 300px;
 
@@ -184,59 +182,6 @@ h6 {
     color: antiquewhite;
 }
 
-
-/************
-Media Queries
-*************/
-
-@media screen and (max-width: 36rem) {
-    main {
-        flex-direction: column;
-        width: 100vw;
-    }
-
-    #item {
-        flex-direction: column;
-        width: 100vw;
-    }
-
-    h6 {
-        font-size: 10px;
-    }
-
-    aside {
-        padding-bottom: 20px;
-        padding-left: 20px;
-    }
-
-
-}
-
-/* Max Size*/
-@media screen and (min-width: 900px) {
-    h6 {
-        font-size: 18px;
-    }
-
-    #projecttitle {
-        font-size: 36px;
-    }
-
-    #sizing {
-        padding: 50px;
-
-    }
-
-}
-
-
-@media screen and (max-width: 576px) {
-    article {
-        flex: 1;
-        max-width: 100%;
-    }
-}
-
 /****************************
 Drop Down Menu From w3Schools
 *****************************/
@@ -278,6 +223,65 @@ Drop Down Menu From w3Schools
 .dropdown:hover .dropdown-content {
     display: block;
 }
+
+/************
+Media Queries
+*************/
+
+@media screen and (max-width: 36rem) {
+    main {
+        flex-direction: column;
+    }
+
+    #item {
+        flex-direction: column;
+        width: 100vw;
+    }
+
+    h6 {
+        font-size: 10px;
+    }
+
+    aside {
+        padding-bottom: 20px;
+        padding-left: 20px;
+    }
+
+
+}
+
+/* Max Size*/
+@media screen and (min-width: 900px) {
+    h6 {
+        font-size: 18px;
+    }
+
+    #projecttitle {
+        font-size: 36px;
+    }
+
+    #sizing {
+        padding: 50px;
+
+    }
+
+}
+
+
+@media screen and (max-width: 576px) {
+    article {
+        flex: 1;
+        max-width: 100%;
+        padding-left: 0;
+    }
+
+    /*    adjust image*/
+    #illus img {
+        transform: translateY(-60px);
+    }
+}
+
+
 
 .dropdown:hover .dropbtn {
     background-color: #3e8e41;
