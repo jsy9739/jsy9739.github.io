@@ -57,8 +57,16 @@ Flexbox Formatting
     max-width: 957px;
     display: flex;
     flex-direction: column;
+    min-height: 100vh;
     overflow: hidden;
 
+}
+
+main {
+
+    /* formatting for visual clarity */
+    display: flex;
+    flex-direction: column;
 }
 
 header,
@@ -89,6 +97,7 @@ aside {
     flex: 1;
     max-width: 480px;
     overflow: hidden;
+    max-height: 300px;
 }
 
 aside {
@@ -103,7 +112,7 @@ aside {
 
 article {
     overflow: hidden;
-    max-height: 380px;
+    max-height: 300px;
     overflow: hidden;
 
 }
@@ -114,6 +123,15 @@ article img {
     width: 100%;
 }
 
+
+#item {
+    display: flex;
+    margin-bottom: auto;
+}
+
+#shortbio {
+    max-width: 410px;
+}
 
 #shortb {
     padding: 8px;
@@ -132,7 +150,11 @@ h1 {
 }
 
 /* The Title*/
-
+h2 {
+    font-weight: 300;
+    font-size: 16px;
+    margin: 0;
+}
 
 p {
     font-size: 24px;
@@ -166,9 +188,9 @@ h6 {
     color: antiquewhite;
 }
 
-/************************************
-Adapted Drop Down Menu From w3Schools
-*************************************/
+/****************************
+Drop Down Menu From w3Schools
+*****************************/
 .dropbtn {
     background-color: black;
     padding-top: 25px;
@@ -206,10 +228,6 @@ Adapted Drop Down Menu From w3Schools
 
 .dropdown:hover .dropdown-content {
     display: block;
-}
-
-#me {
-    transform: translateY(-70px);
 }
 
 /************
@@ -275,36 +293,28 @@ Media Queries
     background-color: #3e8e41;
 }
 
-/*****
-Resume
-******/
+/**************
+Grid Formatting
+**************/
 
-.wrapper {
-    display: flex;
-    align-items: center;
+main {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: .5rem;
+    max-width: 95vw;
+    margin: .5rem auto;
+    max-height: 500px;
 }
 
-.wrapper > div {
-    margin: 0px;
-    padding: .8em;
-    flex: 1;
+img {
+    display: block;
+    width: 100%;
+    border: 2px solid;
+    border-radius: 5px;
 }
 
-p {
-    font-size: 16px;
-}
-
-h2 {
-    background-color: palegreen;
-    font-size: 24px;
-}
-
-h3 {
-    font-size: 18px;
-    font-weight: 400;
-}
-
-h5 {
-    font-size: 18px;
-    font-weight: 100;
+@supports (display: grid) {
+    .warning {
+        display: none;
+    }
 }
