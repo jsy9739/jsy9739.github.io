@@ -87,7 +87,8 @@ footer {
 
 }
 
-article {
+article,
+aside {
 
     padding: .5rem;
     /* allows elements to grow to available space */
@@ -112,6 +113,7 @@ aside {
 article {
     overflow: hidden;
     max-height: 300px;
+    overflow: hidden;
 
 }
 
@@ -133,6 +135,10 @@ article img {
 
 #shortb {
     padding: 8px;
+}
+
+#illus img {
+    transform: translateY(-60px);
 }
 
 /***************
@@ -231,6 +237,7 @@ Media Queries
 @media screen and (max-width: 36rem) {
     main {
         flex-direction: column;
+        width: 100vw;
     }
 
     #item {
@@ -272,7 +279,6 @@ Media Queries
     article {
         flex: 1;
         max-width: 100%;
-        padding-left: 0;
     }
 
     /*    adjust image*/
