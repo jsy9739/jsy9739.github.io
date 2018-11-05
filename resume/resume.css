@@ -62,13 +62,6 @@ Flexbox Formatting
 
 }
 
-main {
-
-    /* formatting for visual clarity */
-    display: flex;
-    flex-direction: column;
-}
-
 header,
 footer {
 
@@ -122,15 +115,6 @@ article img {
     width: 100%;
 }
 
-
-#item {
-    display: flex;
-    margin-bottom: auto;
-}
-
-#shortbio {
-    max-width: 410px;
-}
 
 #shortb {
     padding: 8px;
@@ -294,4 +278,22 @@ Media Queries
 
 .dropdown:hover .dropbtn {
     background-color: #3e8e41;
+}
+
+/*****
+Resume
+******/
+
+main {
+
+    /* formatting for visual clarity */
+    display: flex;
+    flex-direction: row;
+}
+
+#heading {
+    background-color: greenyellow;
+    display: flex;
+    width: 100%;
+
 }
