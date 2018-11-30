@@ -112,7 +112,7 @@ aside {
 
 article {
     overflow: hidden;
-    max-height: 300px;
+    max-height: 242px;
     overflow: hidden;
 
 }
@@ -120,6 +120,7 @@ article {
 
 
 article img {
+    max-height: 242;
     width: 100%;
 }
 
