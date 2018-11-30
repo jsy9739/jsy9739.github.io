@@ -60,6 +60,9 @@ Flexbox Formatting
     overflow: hidden;
 
 }
+img{
+    max-width: 100%;
+}
 
 header,
 footer {
