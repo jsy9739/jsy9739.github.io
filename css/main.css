@@ -188,6 +188,15 @@ h6 {
     color: antiquewhite;
 }
 
+#specialty{
+    font-weight: 200;
+    font-size: 15px;
+    color: antiquewhite;
+    display: flex;
+    justify-content: center;
+
+}
+
 /****************************
 Drop Down Menu From w3Schools
 *****************************/
