@@ -110,6 +110,14 @@ aside {
 
 }
 
+#nav2{
+    display: flex;
+    background-color: aliceblue;
+    justify-content: center;
+    align-content: center;
+}
+
+
 article {
     overflow: hidden;
     max-height: 242px;
@@ -140,8 +148,12 @@ article img {
 #shortbio {
     max-width: 410px;
 }
+#shortbio {
+    max-width: 410px;
+}
 
 #shortb {
+
     padding: 8px;
 }
 
@@ -329,4 +341,12 @@ Media Queries
 
 .dropdown:hover .dropbtn {
     background-color: #3e8e41;
+}
+
+#hero{
+    display: flex;
+}
+
+#hero img{
+    width: 100%;
 }
