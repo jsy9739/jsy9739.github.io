@@ -130,6 +130,13 @@ article img {
     margin-bottom: auto;
 }
 
+#sitem {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: auto;
+}
+
 #shortbio {
     max-width: 410px;
 }
@@ -189,7 +196,7 @@ h6 {
     color: antiquewhite;
 }
 
-#specialty{
+#specialty {
     font-weight: 200;
     font-size: 15px;
     color: antiquewhite;
@@ -255,6 +262,16 @@ Media Queries
         width: 100vw;
     }
 
+    #specialty {
+
+        font-size: 14px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 70%;
+        height: 10px;
+    }
+
     h6 {
         font-size: 10px;
     }
@@ -263,14 +280,16 @@ Media Queries
         padding-bottom: 20px;
         padding-left: 20px;
     }
-    h1{
+
+    h1 {
         font-size: 24px;
     }
-    h4{
+
+    h4 {
         font-size: 12px;
     }
 
-    footer{
+    footer {
         padding-bottom: 15px;
     }
 
