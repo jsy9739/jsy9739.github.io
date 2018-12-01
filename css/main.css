@@ -112,9 +112,10 @@ aside {
 
 #nav2{
     display: flex;
-    background-color: aliceblue;
     justify-content: center;
     align-content: center;
+    padding: 5px;
+
 }
 
 
@@ -349,4 +350,8 @@ Media Queries
 
 #hero img{
     width: 100%;
+}
+
+#spacer{
+    height: calc(6px + 3.5vw);
 }
