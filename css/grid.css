@@ -6,14 +6,13 @@
 
 .container {
     display: grid;
-/*
+    /*
     border-style: solid;
     border-color: red;
 */
     grid-template-columns: repeat(4, 1fr);
     /*    grid-template-rows: repeat(, 1fr);*/
-    grid-row-gap: 0px;
-    grid-column-gap: 0px;
+    grid-gap: 10px;
     /*    width: 100vw;*/
     /*            height: 100vh;*/
 
@@ -116,6 +115,11 @@
 @media screen and (max-width: 36rem) {
     .container div {
         grid-row: auto;
+    }
+
+    .container {
+
+        grid-gap: 0px;
     }
 
     .one {
