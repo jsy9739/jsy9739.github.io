@@ -6,8 +6,10 @@
 
 .container {
     display: grid;
+/*
     border-style: solid;
     border-color: red;
+*/
     grid-template-columns: repeat(4, 1fr);
     /*    grid-template-rows: repeat(, 1fr);*/
     grid-row-gap: 0px;
