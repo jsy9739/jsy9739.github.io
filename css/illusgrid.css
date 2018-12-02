@@ -62,4 +62,8 @@
     .stamps {
         grid-column: span 2;
     }
+
+    #xtra {
+        grid-column: span 4;
+    }
 }
