@@ -44,6 +44,7 @@
     grid-column: span 4;
     padding-left: 20px;
     padding-top: 8px;
+       padding-right: 20px;
 }
 
 .stamps {
@@ -72,4 +73,25 @@
     #spac {
         grid-row: span0;
     }
+}
+
+
+/**************
+Cary Formatting
+***************/
+
+#mockup{
+    max-height: 395px;
+    overflow: hidden;
+}
+
+
+p1{
+    line-height: 130%;
+}
+
+
+#mockup1 img{
+    max-height: 600px;
+    object-fit:contain;
 }
