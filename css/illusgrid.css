@@ -44,7 +44,7 @@
     grid-column: span 4;
     padding-left: 20px;
     padding-top: 8px;
-       padding-right: 20px;
+    padding-right: 20px;
 }
 
 .stamps {
@@ -80,18 +80,32 @@
 Cary Formatting
 ***************/
 
-#mockup{
+#mockup {
     max-height: 395px;
     overflow: hidden;
 }
 
 
-p1{
-    line-height: 130%;
+p1 {
+    line-height: 135%;
 }
 
 
-#mockup1 img{
+#mockup1 img {
     max-height: 600px;
-    object-fit:contain;
+    object-fit: contain;
+}
+
+#caryO {
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#wireframesC {
+    padding: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-gap: 50px
 }
