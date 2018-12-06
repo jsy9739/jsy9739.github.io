@@ -103,9 +103,51 @@ p1 {
 }
 
 #wireframesC {
-    padding: 30px;
+    padding: 50px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
     grid-gap: 50px
+}
+
+#compsB {
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-row: auto;
+    grid-gap: 50px
+}
+
+.webC {
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+#mobileC1 {
+    grid-column: span 1;
+    grid-row: span 2;
+}
+
+@media screen and (max-width: 36rem) {
+    #compsB {
+        grid-gap: 10px;
+    }
+
+    .webC {
+        grid-column: span 4;
+        grid-row: span 4;
+
+    }
+
+    #mobileC {
+        grid-column: span 2;
+        grid-row: span 2;
+    }
+
+    #mobileC1 {
+        grid-column: span 2;
+        grid-row: span 3;
+        object-fit: cover;
+    }
+
 }
