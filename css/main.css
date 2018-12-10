@@ -6,6 +6,7 @@ General Formatting Rules
 
 * {
     box-sizing: border-box;
+    border-style: none;
 }
 
 html {
@@ -31,7 +32,6 @@ a:link {
 
 a:visited {
     text-decoration: none;
-    color: black;
 }
 
 a:hover {
@@ -359,6 +359,7 @@ Media Queries
 #hero img {
     width: 100%;
 }
+
 #hero video {
     width: 100%;
 }
@@ -373,6 +374,6 @@ Media Queries
     padding-right: 20px;
 }
 
-article h4{
+article h4 {
     margin: 0;
 }
