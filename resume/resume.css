@@ -6,6 +6,8 @@ General Formatting Rules
 
 * {
     box-sizing: border-box;
+    margin: 3px;;
+    padding: 2.5px;
 }
 
 html {
@@ -41,7 +43,7 @@ a:hover {
 
 html,
 body,
-#wrapper {
+.wrapper {
     /* resets margins to prevent sizing issues */
     margin: 0;
 
@@ -330,6 +332,8 @@ p {
 h2 {
     background-color: palegreen;
     font-size: 24px;
+    margin: 5px;
+
 }
 
 h3 {
@@ -340,4 +344,18 @@ h3 {
 h5 {
     font-size: 18px;
     font-weight: 100;
+}
+
+.print{
+    display: flex;
+    justify-content: center;
+    border-color: #ea8677;
+}
+
+.print button{
+     border-color: #ea8677;
+    border: solid 2px #ea8677;
+    color: #ea8677;
+
+
 }
