@@ -257,6 +257,18 @@ Media Queries
 
     }
 
+     h1 {
+        font-size: 24px;
+    }
+
+    h4 {
+        font-size: 12px;
+    }
+
+    footer {
+        padding-bottom: 15px;
+    }
+
 }
 
 
