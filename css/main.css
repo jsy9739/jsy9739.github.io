@@ -159,6 +159,10 @@ article img {
 
     padding: 8px;
 }
+#shortbb {
+  padding: 0 15px 0 15px;
+    max-width: 600px;
+}
 
 #illus img {
     transform: translateY(-60px);
@@ -208,7 +212,6 @@ h6 {
 #projecttitle {
     font-weight: 500;
     font-size: calc(12px + 2.5vw);
-    color: antiquewhite;
 }
 
 #specialty {
@@ -223,6 +226,7 @@ h6 {
 Drop Down Menu From w3Schools
 *****************************/
 .dropbtn {
+    background-color: black;
     background-color: black;
     padding-top: 25px;
     padding-right: 97px;
@@ -350,6 +354,9 @@ Media Queries
 }
 
 #hero img {
+    width: 100%;
+}
+#hero video {
     width: 100%;
 }
 
