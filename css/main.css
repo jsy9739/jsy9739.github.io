@@ -29,11 +29,13 @@ html {
 a:link {
     text-decoration: none;
     color: #ea8677;
+/*    color: royalblue;*/
 }
 
 a:visited {
     text-decoration: none;
     color: #ea8677;
+/*    color: lightsteelblue;*/
 }
 
 a:hover {
